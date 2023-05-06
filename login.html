@@ -12,35 +12,46 @@
 </head>
 <body>
     <header>
-        <a href="Bases.html"class="logo">
+        <a href="inicio.html"class="logo">
             <img src="imagenes/icono_logo.png" alt="logo restaurante">
         </a>
         <nav>
-            <a href="Bases.html" class="nav-link">Inicio</a>
+            <a href="inicio.html" class="nav-link">Inicio</a>
             <a href="menu.html" class="nav-link">Menu</a>
             <a href="reservacion.html" class="nav-link">Reservaciones</a>
             <a href="login.html" class="nav-link">Iniciar Sesión</a>
         </nav>
     </header>
-    <div ><h1> .. </h1></div> -------quitarlos
-    <form class="form">
-      <h1 class="form_title">Iniciar Sesión</h1>
-      <div class="form_container">
-        <div class="form_group">
-            <input type="text" id="user" class="form_input" placeholder=" ">
-            <label for="user" class="form_label">Usuario:</label>
-            <span class="form_line"></span>
+<section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Correo</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">contraseña</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Recuerdame <a href="#">Olvidaste tu contraseña?</a></label>
+                      
+                    </div>
+                    <button>iniciar Sesión</button>
+                    <div class="register">
+                        <p>¿Aun no tienes una cuenta?<a href="#">Registrate</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
-      </div>
-      <div class="form_group">
-        <input type="text" id="password" class="form_input" placeholder=" ">
-        <label for="password" class="form_label">Contraseña:</label>
-        <span class="form_line"></span>
-    </div>
-        <p class="form_paragraph"> ¿Aún no tienes cuenta? <a href="#" class="form_link">Entra aqui</a></p>
-        <input type="submit" class="form_submit" value="Entrar">
-    </form>
-    <div ><h1>  ..</h1></div> -----quitarlos
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <footer class="footer">
         <div class="container">
                 <div class="footer-col">
