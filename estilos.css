@@ -2,13 +2,6 @@
 body{	
     font-family: 'Open Sans', sans-serif;
 	width: 100%;
-/*fondo del login*/ 
-	background-color: #bbdb7e;
-    opacity: 0.8;
-    background-size: 20px 20px;
-	background-image:  radial-gradient(#665f50 0.5px, transparent 0.5px);
-    background-position: 0 0,10px 10px;
-
 }
 
 .frf-element img{
@@ -134,10 +127,37 @@ section{
     background-position: center;
     background-size: cover;
 }
+
+.reservacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+	background: url('/imagenes/reservacion-fondo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
 .form-box{
     position: relative;
     width: 400px;
     height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box-registro{
+    position: relative;
+    width: 400px;
+    height: 550px;
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
