@@ -10,6 +10,14 @@ body{
     background-position: 0 0,10px 10px;
 
 }
+@font-face {
+    font-family: Dalila;
+    src: url(imagenes/Sweet\ Romance.otf);
+}
+@font-face {
+    font-family: Escrito;
+    src: url(imagenes/GrandeuxSerif_PERSONAL_USE_ONLY.otf);
+}
 /* Oculta el scrollbar*/
 	::-webkit-scrollbar {display: none;}
 /*----*/
@@ -20,6 +28,21 @@ body{
 	background-color: rgba(0,0,0,0.8);
 	filter:brightness(0.5);
 }
+
+.frf-element video{
+    /*
+	background-color: rgba(0,0,0,0.8);
+	filter:brightness(0.5);*/
+    width: 1309px;
+	height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    pointer-events: none;
+}
+
 .frf-element{
 	position: relative;
     display: inline-block;
@@ -27,71 +50,71 @@ body{
 }
 .saludo{
     position: absolute;
-	top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	color: #ffffff;
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 40px;
-	text-shadow: 0px 10px 2px black;
-}
-.nombre{
-    position: absolute;
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 	color: #ffffff;
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-style:oblique;
+	font-family:Escrito;
 	font-size: 40px;
-	text-shadow: 0px 10px 2px black;
+	text-shadow: 0px 5px 2px black;
+}
+.nombre{
+    position: absolute;
+	top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-family: Dalila;
+	font-style:oblique;
+	font-size: 70px;
+	text-shadow: 0px 5px 8px black;
 }
 .boton4 {
 	position: absolute;
-	top: -150px;
+	top: -200px;
     left: 50px;
-color: #fff !important;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 0.5em 1.2em;
-  background: rgba(0,0,0,0);
-  border: 2px solid;
-  border-color: #fff;
-  transition: all 1s ease;
-  position: relative;
-  border-radius: 15px;
-  cursor: pointer;
-  }
-  .boton4:hover {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #fff;
+    transition: all 1s ease;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.boton4:hover {
 	background: #fff;
 	color:#7e612a !important;
 	box-shadow: 0 4px 16px rgb(66, 55, 18);
 	transition: all 0.2s ease;
 	
-  }
-  .boton5 {
+}
+.boton5 {
 	cursor: pointer;
 	position: absolute;
-	top: -150px;
+	top: -200px;
 	color: #fff !important;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 0.5em 1.2em;
-  background: rgba(0,0,0,0);
-  border: 2px solid;
-  border-color: #fff;
-  transition: all 1s ease;
-  position: relative;
-  border-radius: 15px;
-  margin-left: 200px;
-  }
-  .boton5:hover {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #fff;
+    transition: all 1s ease;
+    position: relative;
+    border-radius: 15px;
+    margin-left: 200px;
+}
+.boton5:hover {
 	background: #fff;
 	color:#7e612a !important;
 	box-shadow: 0 4px 16px rgb(66, 55, 18);
 	transition: all 0.2s ease;
 	
-  }
+}
 
 
 
