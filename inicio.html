@@ -13,6 +13,20 @@
 
 </head>
 <body>
+    <script>
+        setTimeout(function(){
+            document.getElementById('Contenedor').style.transform="scale(0)";
+        }, 4000);
+    </script>
+    <div class="content" id="Contenedor">
+        <svg>
+            <path></path>
+        </svg>
+        <svg>
+            <path></path>
+            
+        </svg>
+    </div>
     <header>
         <a href="inicio.html"class="logo">
             <img src="imagenes/icono_logo.png" alt="logo restaurante">
@@ -27,19 +41,203 @@
     
     <div class="frf-element">
         <video autoplay muted loop/>
-        <source src="imagenes/Restaurantes y Gastronomía, imágenes de platos _ Comida, gourmet, foodie, recetas..mp4" type="video/mp4" />
-      </video/>
-    <!--<img src="https://img.freepik.com/foto-gratis/cena-sopa-sushi-carne-pollo-frita-papas-pastel_141793-589.jpg?w=740&t=st=1683348715~exp=1683349315~hmac=e36b9cdddf07805f20b5cdcc52cb53c580c54d92c7eff2e3c6ccc584099d9fd8" alt="fondo pagina">-->
-    <div class="nombre">Restaurante Gourmet</div>
-    <div class="saludo">La mejor experiencia para tu paladar</div>
-    <div class="separar">
-        <span class="boton4">Conocenos</span>
-        <span class="boton5">Realizar Pedido</span>
+            <source src="imagenes/Restaurantes y Gastronomía, imágenes de platos _ Comida, gourmet, foodie, recetas..mp4" type="video/mp4" />
+        </video>
+        <div class="nombre">Restaurante Gourmet</div>
+        <div class="saludo">La mejor experiencia para tu paladar</div>
+        <div class="separar">
+            <span class="boton4"><a href="#Conocenos">Conocenos</a></span>
+            <span class="boton5">Realizar Pedido</span>
+        </div>
     </div>
-    
-</div>
+    <h2 class="letreroCarrusel">Platos más vendidos este mes</h2>
+    <div class="carousel">
+        <div class="carrusel-list" id="carrusel-list">
+            <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+            </button>
 
-
+            <div class="carrusel-track" id="track">
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/foto-gratis/pechuga-pollo-frita-queso-tomate-papas-fritas-salsa-tomate-ensalada-verde-vista-lateral-jpg_141793-1782.jpg?w=740&t=st=1683403932~exp=1683404532~hmac=b6bf7835ec7ba8d199668c88819d55321e4483a976984626895fdc4d8c63298d" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/fotos-premium/brochetas-carne-parrilla-shish-kebab-pollo-calabacin-tomate-cebolla-roja_2829-10940.jpg" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/foto-gratis/vista-lateral-carne-frita-salsa-frutos-secos-arroz_141793-4910.jpg?w=740&t=st=1683419337~exp=1683419937~hmac=67bf1358fc94d157b133f6737617170ad7f98065442a755c9149c3bee8883fd3" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/foto-gratis/plato-costillas-cordero-parrilla-pure-papa-frita_140725-10705.jpg?t=st=1683419337~exp=1683419937~hmac=9c70610d77ad79318915ad1fff76b3b82615daa267cd5c8205e50364aaf56b1d" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/foto-gratis/ensalada-cesar-lechuga-pollo-tomate-limon-parmesano-anchoas-vista-lateral_141793-12138.jpg" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>                
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/fotos-premium/shawarma-pollo-plancha-verduras_264437-218.jpg" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/fotos-premium/desayuno-ingles-salchichas-tocino-tomates-huevo-frijoles-salsa-champinones-fritos-tostadas-mesa-madera-oscura-vista-superior-comida-clasica-tradicional-inglaterra_193819-799.jpg" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/foto-gratis/tartar-salmon-mousse-aguacate_2829-8091.jpg" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/foto-gratis/sandwiches-jamon-verduras_140725-1419.jpg?w=740&t=st=1683419707~exp=1683420307~hmac=fbfc2816979a576a04b2cf98f76077818e6073552a13b1650bd0eecc55b561e9" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/foto-gratis/plato-espagueti-trufa-salsa-champinones-parmesano-rallado_141793-1965.jpg?w=740&t=st=1683419748~exp=1683420348~hmac=26ccfab65d91deae1b0ef4ca33bdc89ed5f799f1a3c923f39cec2cbc9b752f7b" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="carrusel">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <img src="https://img.freepik.com/fotos-premium/hamburguesa-jugosa-salsa-patatas-fritas-cola_357114-340.jpg?w=740" alt="imagen">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="scrip.js"></script>
+    <div class="conocenos" id="Conocenos">
+        <div class="conocer">
+            <h2>Sobre Nosotros</h2>
+        </div>
+        <hr width=400 id="linea">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci doloremque voluptates? Nam vel mollitia, fugiat tempora modi dolore ad esse molestias, debitis quidem in facere totam optio blanditiis? Nemo?</p>
+        <div class="imagen1">
+            <img src="https://img.freepik.com/foto-gratis/restaurante-hall-mesas-redondas-cuadradas-algunas-sillas-plantas_140725-8033.jpg?w=740&t=st=1683427364~exp=1683427964~hmac=189b89a5b61bad2710efdfd07245de7c844caedd968ae6b9b55bf0ade0b14f26" alt="imagen">
+        </div>
+        <div class="imagen2">
+            <img src="https://img.freepik.com/foto-gratis/pareja-trabajando-cafetera_23-2148366712.jpg?w=740&t=st=1683427612~exp=1683428212~hmac=7182b9cc6e5420063e7da776f85cf2d98154d7ee88e8fcd24b2dec844045684c" alt="imagen">
+        </div>
+        <div class="imagen3">
+            <img src="https://img.freepik.com/foto-gratis/cocinero-feliz-poniendo-espinacas-plato-ensalada_23-2148040247.jpg?w=740&t=st=1683427698~exp=1683428298~hmac=0d9887565c2490881f1221c85c771aa21b325ba52914877ffe78fa6af5096fc2" alt="imagen">
+        </div>
+    </div>
+    <div class="clientes">
+        <h2>Nuestros Clientes</h2>
+    </div>
+    <div class="opiniones">
+        <div class="card">
+            <div class="head">
+                <div class="circle"></div>
+                <div class="img">
+                    <img src="https://img.freepik.com/foto-gratis/apuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.jpg?w=740&t=st=1683436835~exp=1683437435~hmac=3dcdb50fb20d3e87b189931475486349bf660119c7c5d890cbc4163712b5548d" alt="imagen">
+                </div>
+            </div>
+            <div class="description">
+                <h3>María Polo</h3>
+                <h4>Ingeniera de Sistemas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo possimus facilis.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="head">
+                <div class="circle"></div>
+                <div class="img">
+                    <img src="https://img.freepik.com/foto-gratis/apuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.jpg?w=740&t=st=1683436835~exp=1683437435~hmac=3dcdb50fb20d3e87b189931475486349bf660119c7c5d890cbc4163712b5548d" alt="imagen">
+                </div>
+            </div>
+            <div class="description">
+                <h3>María Polo</h3>
+                <h4>Ingeniera de Sistemas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo possimus facilis.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="head">
+                <div class="circle"></div>
+                <div class="img">
+                    <img src="https://img.freepik.com/foto-gratis/apuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.jpg?w=740&t=st=1683436835~exp=1683437435~hmac=3dcdb50fb20d3e87b189931475486349bf660119c7c5d890cbc4163712b5548d" alt="imagen">
+                </div>
+            </div>
+            <div class="description">
+                <h3>María Polo</h3>
+                <h4>Ingeniera de Sistemas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo possimus facilis.</p>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
                 <div class="footer-col">
