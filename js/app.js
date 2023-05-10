@@ -1,4 +1,4 @@
-//Variable que mantiene el estado visible del carrito
+  //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 
 //Espermos que todos los elementos de la pàgina cargen para ejecutar el script
