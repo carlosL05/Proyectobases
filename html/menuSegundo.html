@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imagenes/icono_logo.ico">
+    <link rel="stylesheet" type="text/css" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <a href="inicio.html"class="logo">
+            <img src="imagenes/icono_logo.png" alt="logo restaurante">
+        </a>
+        <nav>
+            <a href="inicio.html" class="nav-link">Inicio</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="reservacion.html" class="nav-link">Reservaciones</a>
+            <a href="login.html" class="nav-link">Iniciar Sesión</a>
+        </nav>
+    </header>
+    
+    <script>
+        let btnMenu = document.getElementById('btnmenu');
+        let Menu = document.getElementById('menu');
+         btnMenu.addEventListener('click', function(){
+         'use strict';
+         menu.classList.toggle('mostrar');
+          });
+      </script>
+      <br> 
+      <center><p><strong><font face="Pacifico" color="#FFFFF"><h1>Filtrar/Ordenar</h1></font></strong></p></center>
+          <header>
+              <div class="categorias" id="categorias">
+                  <a href="#" class="activo">Todos</a>
+                  <a href="#">Sombras</a>
+                  <a href="#">Brochas</a>
+                  <a href="#">Complementos</a>
+              </div>
+          </header>
+          <div id="container">
+          <form action="">
+              <label for="s">
+              <i class="icon-buscar"></i>
+              </label>
+              <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+          </form>
+          <div class="container container--flex">
+          <section class="grid" id="grid">
+           <div class="item" 
+                   data-categoria="sombras"
+                   data-etiquetas="Sombras X42 tonos cuadrado"
+                   data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              >
+                  <div class="item-contenido"><br>
+                      <img src="https://img.freepik.com/foto-gratis/vista-lateral-espaguetis-verduras-queso-ricotta-plato-blanco-redondo_176474-3223.jpg?w=740&t=st=1683668336~exp=1683668936~hmac=26fdf0ebe7c01b1d7efbdcea0e57883a8e19cf9fdbb873b2d3cdfc4b71104ce7" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Sombras X42 tonos cuadrado</div>
+                     <div class="today-special__price">$45.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+                  </div>
+              </div>
+              <div class="item" 
+                   data-categoria="sombras"
+                   data-etiquetas="Paleta de sombras en glitter MISS"
+                   data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              >
+                  <div class="item-contenido"><br>
+                      <img src="img/Paletag.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Paleta de sombras en glitter MISS</div>
+                     <div class="today-special__price">$40.000</div></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+                  </div>
+              </div>
+              <div class="item" 
+                   data-categoria="sombras"
+                   data-etiquetas="Paleta de sombras RIHAD"
+                   data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              >
+                  <div class="item-contenido"><br>
+                      <img src="img/RHI.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Paleta de sombras RIHAD</div>
+                     <div class="today-special__price">$10.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+                  </div>
+              </div>
+              <div class="item" 
+                   data-categoria="complementos"
+                   data-etiquetas="Pega de pestañas color negro"
+                   data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              >
+                  <div class="item-contenido"><br>
+                      <img src="img/Pega.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Pega de pestañas color negro</div>
+                     <div class="today-special__price">$3.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+                  </div>
+              </div>
+              <div class="item"
+                   data-categoria="sombras" 
+                   data-etiquetas="Paleta Colorful Rainbow"
+                   data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Colorful.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Paleta Colorful Rainbow</div>
+                     <div class="today-special__price">$65.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+              </div>
+              <div class="item"
+                   data-categoria="brochas" 
+                   data-etiquetas="Brochas X20 para ojos"
+                   data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Brochas.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Brochas X20 para ojos</div>
+                     <div class="today-special__price">$28.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div> 
+              </div>
+              <div class="item"
+              data-categoria="brochas" 
+            data-etiquetas="Brochas para Unicornio"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido"><br>
+                     <img src="img/Brochasu.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Brochas para Unicornio</div>
+                     <div class="today-special__price">$22.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div> 
+              </div>
+              <div class="item"
+              data-categoria="sombras" 
+            data-etiquetas="Sombras Kisscrown"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido"><br>
+                     <img src="img/Sombrask.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Sombras Kisscrown</div>
+                     <div class="today-special__price"> $39.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+              <div class="item"
+              data-categoria="sombras" 
+            data-etiquetas="Sombras Romantic Bird"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Sombrasb.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Sombras Romantic Bird</div>
+                     <div class="today-special__price"> $27.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+              <div class="item"
+              data-categoria="sombras" 
+            data-etiquetas="Sombras fruit Pie filling"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Sombrasf.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Sombras fruit Pie filling</div>
+                     <div class="today-special__price"> $26.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div> 
+                </div>
+              <div class="item"
+              data-categoria="sombras" 
+            data-etiquetas="Sombras GENIUS<"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Sombrasg.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Sombras GENIUS</div>
+                     <div class="today-special__price"> $34.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div> 
+                </div>
+              <div class="item"
+              data-categoria="sombras" 
+            data-etiquetas="Sombras Love in Eyes"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Sombrasl.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Sombras Love in Eyes</div>
+                     <div class="today-special__price"> $17.000</div></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+              </div>
+              <div class="item"
+              data-categoria="sombras" 
+            data-etiquetas="Paleta de Sombras BEAUTY GLAM"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Paletab.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Paleta de Sombras BEAUTY GLAM</div>
+                     <div class="today-special__price"> $40.000</div></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+              <div class="item"
+              data-categoria="complementos" 
+            data-etiquetas="Kit de cejas ENGOL"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/CEJAS.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Kit de cejas ENGOL</div>
+                     <div class="today-special__price"> $10.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+              <div class="item"
+              data-categoria="brochas" 
+            data-etiquetas="Set de brochas Kabuki"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Brochask.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Set de brochas Kabuki</div>
+                     <div class="today-special__price"> $6.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+              <div class="item"
+              data-categoria="complementos" 
+            data-etiquetas="Pestañina USHAS"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Pesta%C3%B1ina.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Pestañina USHAS</div>
+                     <div class="today-special__price"> $10.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+              <div class="item"
+              data-categoria="sombras" 
+            data-etiquetas="Sombras Pro color classic QUEEN"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Sombrap.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Sombras Pro color classic QUEEN</div>
+                     <div class="today-special__price"> $12.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+              <div class="item"
+              data-categoria="brochas" 
+            data-etiquetas="Kit de brochas mármol"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Kit.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Kit de brochas mármol</div><br>
+                     <div class="today-special__price"> $18.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+              <div class="item"
+              data-categoria="complementos" 
+            data-etiquetas="Delineador en Glitter USHAS"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/delineador.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Delineador en Glitter USHAS</div><br>
+                     <div class="today-special__price"> $7.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div> 
+                </div>
+              <div class="item"
+              data-categoria="sombras" 
+            data-etiquetas="Super Paleta ROMANKY"
+            data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."> 
+              <div class="item-contenido">
+                     <br><img src="img/Superpaleta.png" alt="" class="today-special__img"><br>
+                     <center><div class="today-especial__title">Super Paleta ROMANKY</div><br>
+                     <div class="today-special__price"> $65.000</div><br></center>
+                     <center><a href="" class="btn btn--contact">COMPRAR<br>AHORA</a></center>
+              </div>
+                </div>
+          </section>
+          </section>
+          <section class="overlay" id="overlay">
+          <div class="modal-producto">
+              <div class="column column--40">
+                  <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                  <img src="" alt="">
+              </div>
+          </div>
+          <div class="informacion">
+              <p class="descripcion"></p>
+          </div>
+          <a href="" class="ahora">COMPRAR<br>AHORA</a>
+          </section>
+      </div>
+      <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+      <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+      <script> 
+      const grid = new Muuri('.grid', {
+      layout: {
+          rounding: false
+      }
+  });
+  
+  window.addEventListener('load', () => {
+      grid.refreshItems().layout();
+      document.getElementById('grid').classList.add('imagenes-cargadas');
+  
+      // Agregamos los listener de los enlaces para filtrar por categoria.
+      const enlaces = document.querySelectorAll('#categorias a');
+      enlaces.forEach((elemento) => {
+          elemento.addEventListener('click', (evento) => {
+              evento.preventDefault();
+              enlaces.forEach((enlace) => enlace.classList.remove('activo'));
+              evento.target.classList.add('activo');
+  
+              const categoria = evento.target.innerHTML.toLowerCase();
+              categoria === 'todos' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);
+          });
+      });
+      // Agregamos el listener para la barra de busqueda
+      // la barra de busqueda tomara la data-etiqueta para filtrar y hacer la busqueda
+      document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
+          const busqueda = evento.target.value;
+          grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
+      });
+      // Agregamos listener para las imagenes
+      const overlay = document.getElementById('overlay');
+      document.querySelectorAll('.grid .item img').forEach((elemento) => {
+          elemento.addEventListener('click', () => {
+              const ruta = elemento.getAttribute('src');
+              const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+              overlay.classList.add('activo');
+              document.querySelector('#overlay img').src = ruta;
+              document.querySelector('#overlay .descripcion').innerHTML = descripcion;
+          });
+      });
+      // Eventlistener del boton de cerrar
+      document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
+          overlay.classList.remove('activo');
+      });
+      // Eventlistener del overlay
+      overlay.addEventListener('click', (evento) => {
+          evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
+      });
+  });
+      </script>
+
+    <footer class="footer">
+        <div class="container">
+                <div class="footer-col">
+                    <h4>Siguenos</h4>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/?stype=lo&jlou=Affy1xvO5i63iHGI8vI8F_OJHJCyLwGoMs-wCk-rP1V6_R7Eu0KtGZ_eoZLdrUY6XIHSxfuAxsSPQfuWcEvd68HMc5FSW5IaIl2oPJ5EE_-hfA&smuh=52851&lh=Ac-_UvyiGeV6x5HbdhQ"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+</body>
+</html>

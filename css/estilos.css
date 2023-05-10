@@ -14,13 +14,13 @@ body{
 {
     display: flex;
     min-height: 100vh;
-    background: #000;
+    background: #fff;
     z-index: 10000000;
 }
 .content{
 	width: 100%;
 	height: 100vh;
-	background: #000;
+	background: #fff;
 	display: flex;
 	transition: all 1s;
 	position: fixed;
@@ -31,24 +31,55 @@ body{
     align-items: center;
     z-index: 10000000;
 }
-svg
-{
-    position: absolute;
-    width: 400px;
-    fill: none;
+/*---Preloader---*/
+.copa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-svg:nth-child(2)
-{
-    filter: blur(40px);
+.wine-glass{
+    height: 50px;
+    width: 50px;
+    border: 3px solid #000;
+    border-radius:0 0 50% 50%;
+    background-image: url(../recursos/wine.png);
+    animation: fill 5s infinite;
+    background-repeat: repeat-x;
 }
-svg path
-{
-    d: path("M0,25 C150,110 150,-60 300,25");
-    stroke: #524311;
-    stroke-width:50;
-    stroke-linecap: round;
-    transform: translate(50px,50%);
-    animation: animate 2s ease-in-out infinite;
+@keyframes fill{
+    0%{
+        background-position: 0px 50px;
+    }
+    10%{
+        background-position: -1px 40px;
+    }
+    20%{
+        background-position: -5px 45px;
+    }
+    40%{
+        background-position: -50px 30px;
+    }
+    60%{
+        background-position: -70px 20px;
+    }
+    80%{
+        background-position: -100px 5px;
+    }
+    100%{
+        background-position: 0px 50px;
+    }
+}
+.glass-stem{
+    height: 50px;
+    width: 5px;
+    background: #000;
+}
+.glass-base{
+    height: 10px;
+    width: 35px;
+    background: #000;
+    border-radius: 50%;
 }
 @keyframes animate
 {
@@ -65,11 +96,11 @@ svg path
 }
 @font-face {
     font-family: Dalila;
-    src: url(imagenes/Sweet\ Romance.otf);
+    src: url(../recursos/Sweet\ Romance.otf);
 }
 @font-face {
     font-family: Escrito;
-    src: url(imagenes/GrandeuxSerif_PERSONAL_USE_ONLY.otf);
+    src: url(../recursos/GrandeuxSerif_PERSONAL_USE_ONLY.otf);
 }
 /* Oculta el scrollbar*/
 	::-webkit-scrollbar {display: none;}
@@ -157,6 +188,29 @@ svg path
     margin-left: 200px;
 }
 .boton5:hover {
+	background: #fff;
+	color:#7e612a !important;
+	box-shadow: 0 4px 16px rgb(66, 55, 18);
+	transition: all 0.2s ease;
+	
+}
+.boton6{
+	position: absolute;
+	top: -5px;
+    left: 600px;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #fff;
+    transition: all 1s ease;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.boton6:hover {
 	background: #fff;
 	color:#7e612a !important;
 	box-shadow: 0 4px 16px rgb(66, 55, 18);
@@ -280,7 +334,7 @@ section{
     min-height: 100vh;
     width: 100%;
     
-	background: url('/imagenes/fondo.jpg');
+	background: url('../recursos/fondo.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -292,7 +346,7 @@ section{
     min-height: 100vh;
     width: 100%;
     
-	background: url('/imagenes/reservacion-fondo.jpg');
+	background: url('../recursos/reservacion-fondo.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -417,6 +471,7 @@ button{
 .carousel{
     width: 100%;
     margin: 0px 0px;
+    height: 450px;
 }
 
 .carrusel-list{
@@ -560,8 +615,7 @@ button{
     margin-top: 45px;
     color: #524311;
     margin-left: 70px;
-    align-items: center;
-     
+    align-items: center  
 }
 .opiniones{
     display: flex;
@@ -626,4 +680,60 @@ button{
 .card .description p{
     margin-top: 20px;
     font-size: 15px;
+}
+/*----Menu---*/
+.today-special .column{
+    margin-bottom: 30px;  
+    text-align: center;
+}
+.today-special__img{
+    margin: auto;
+    max-width: 350px;
+    max-height: 350px;
+}
+.today-special__title{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.today-special__price {
+    font-size: 1.5em;
+    color: #F09;
+    font-weight:bold;
+}
+.grid {
+	position: relative;
+	width: 100%;
+	transition: opacity 0.5s linear 1s;
+}
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: 18%;
+}
+.grid .item-contenido {
+	position: relative;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 01);
+    height: 380px;
+    border: px solid;
+    border-color: deeppink;
+    background: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 01);
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: grab;
+    width: 170px;
+}       
+.grid .item img {
+	width: 170px;
+	cursor: pointer;
+	vertical-align: top;
+}
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;  
 }
