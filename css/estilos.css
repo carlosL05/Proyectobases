@@ -368,7 +368,7 @@ section{
 .form-box-registro{
     position: relative;
     width: 400px;
-    height: 550px;
+    height: 650px;
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
@@ -738,3 +738,54 @@ button{
     align-items: center;  
 }
 
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #e7e4b8;}
+  
+  #customers tr:hover {background-color: #c4bf9b;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7a6c1d;
+    color: rgb(0, 0, 0);
+  }
+
+.buttone{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #b69666;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.buttone2{
+    width: 60%;
+    height: 40px;
+    left: 10%;
+    border-radius: 40px;
+    background: #b69666;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+
+  

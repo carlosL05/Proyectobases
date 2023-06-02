@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../recursos/icono_logo.ico">
     <link rel="stylesheet" type="text/css" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>administrador</title>
+    <title>Empleados</title>
 </head>
 <body>
     <header>
@@ -22,27 +22,34 @@
             <a href="../html/login.html" class="nav-link">Iniciar Sesión</a>
         </nav>
     </header>
-<section >
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h2>Consultar</h2> 
-                    <input class="buttone"type="button" onclick="location.href='../html/facturasventas.html'" value="Factura Ventas" />                                                                                                         
-                    <br></br>  
-                    <input class="buttone"type="button" onclick="location.href='../html/gastos.html'" value="Gastos Fijos" />             
-                    <br></br>
-                    <input class="buttone"type="button" onclick="location.href='../html/facturascompra.html'" value="Factura Compras" />            
-                    <br></br>  
-                    <input class="buttone"type="button" onclick="location.href='../html/empleado.html'" value="Empleado" /> 
-                    <br></br>  
-                    <input class="buttone"type="button" onclick="location.href='../html/provedor.html'" value="Provedor" /> 
-                </form>
-            </div>
-        </div>
-    </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <h1>Empleado</h1>
 
+    <table id="customers">
+      <tr>
+        <th>Id Empleados</th>
+        <th>Nombres</th>
+        <th>Correos</th>
+        <th>Direcciones</th>
+        <th>Telefonos</th>
+        <th>Fechas de Nacimiento</th>
+        <th>Id Cargo</th>
+        <th>Accion</th>
+      </tr>
+      <tr>
+        <td>123</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td>123</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td>123</td>
+        <td>
+            <input class="buttone"type="button" onclick="location.href='../html/crearempleado.html'" value="Editar" /> 
+            <br></br>
+            <input class="buttone"type="button" onclick="location.href='../html/crearempleado.html'" value="Eliminar" />       
+      </tr>  
+    </table>    
+    <input class="buttone2"type="button" onclick="location.href='../html/crearempleado.html'" value="Agregar" /> 
     <footer class="footer">
         <div class="container">
                 <div class="footer-col">
